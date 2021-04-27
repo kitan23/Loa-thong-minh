@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff0000;
+}
+
+* {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #d1cece;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.nav {
+  background-color: #312e2e;
+  width: 100%;
+  height: 10vh;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.nav .nav_links {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.nav .nav_links div {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.nav .nav_links a:hover {
+  color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.nav .nav_links .fas.fa-search:hover,
+.nav .nav_links .fas.fa-shopping-bag:hover {
+  color: white;
+}
+
+.prd {
+  margin: 20vh 0 20px 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+}
+
+.prd li {
+  color: black;
+  margin: 20px 0;
+}
+
+.prd .prd_name {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.prd .pre_ord a {
+  color: black;
+  text-decoration: underline;
+}
+
+.prd .pre_ord a:hover {
+  color: cornflowerblue;
+}
+
+img {
+  width: 60%;
+}
+
+.des {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(black), to(#413f3f));
+  background-image: linear-gradient(to top, black, #413f3f);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.des img {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.des ul {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 5rem 3rem;
+  text-align: center;
+}
+
+.des ul li {
+  color: #e4e1e1;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  padding: 20px 0;
+}
+
+.des ul li:nth-child(1) {
+  font-size: 19px;
+  font-weight: 550;
+}
+
+.des ul li:hover {
+  color: white;
+}
+/*# sourceMappingURL=speaker_style.css.map */
