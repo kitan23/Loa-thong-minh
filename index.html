@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/speaker_style.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <title>Smart Speaker</title>
+</head>
+
+<body>
+    <section id='sec' class='main'>
+        <nav class='nav'>
+            <ul class="nav_links">
+                <div>Ohsho</div>
+                <li class='section'><a href='#'>Về chúng tôi</a></li>
+                <li class='section'><a href='#'>Sản phẩm</a></li>
+                <li class='section'><a href='#'>Hỗ trợ</a></li>
+                <li><a href="#"><i class="fas fa-search"></i></a></li>
+                <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                <ul class="toggle" onclick=toggle()>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </ul>
+        </nav>
+        <section class='prd'>
+            <ul class='prd_ul'>
+                <li class="prd_name">Hovie</li>
+                <li>Nói Hey Google.</li>
+                <li class='pre_ord'><a href='#'>Pre-order</a></li>
+            </ul>
+        </section>
+        <section class='des'>
+            <img src="./css/speaker.png" alt="image">
+            <ul>
+                <li>Loa thông minh đầu tiên biết nói Tiếng Việt</li>
+                <li>Tốc độ phản hồi nhanh</li>
+                <li>Cập nhật thông tin thời gian thực</li>
+                <li>Thông dịch ngôn ngữ</li>
+            </ul>
+        </section>
+    </section>
+    <nav class="side-bar-all">
+        <div class="return" onclick=toggle()>
+            <ul>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+        <div class='side-bar'>
+            <ul>
+                <li><a href='#'>Thông tin</a></li>
+                <li><a href='#'>Sản phẩm</a></li>
+                <li><a href='#'>Hỗ trợ</a></li>
+            </ul>
+        </div>
+    </nav>
+    <script type="text/javascript">
+        function toggle(){
+            var sec = document.getElementById('sec'); 
+            sec.classList.toggle('active')
+        }
+    </script>
+</body>
+
+</html>
